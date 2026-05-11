@@ -12,7 +12,7 @@ public class PatientService {
     private PatientRepository patientRepository ;
 
     public PatientService(PatientRepository patientRepository){
-        this.patientRepository = patientRepository
+        this.patientRepository = patientRepository ;
     }
 
     public List<PatientResponseDTO> getPatient (){
