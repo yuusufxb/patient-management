@@ -21,8 +21,8 @@ public class PatientService {
         return patients.stream()
                 .map(PatientMapper::ToDTO).toList();
     }
-    public List<PatientRequestDTO> setPatient(){
-
+    public PatientResponseDTO createPatient(PatientRequestDTO patientRequestDTO){
+        
     }
 
 }
