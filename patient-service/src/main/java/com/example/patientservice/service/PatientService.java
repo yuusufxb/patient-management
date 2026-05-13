@@ -22,7 +22,8 @@ public class PatientService {
                 .map(PatientMapper::ToDTO).toList();
     }
     public PatientResponseDTO createPatient(PatientRequestDTO patientRequestDTO){
-        
+        Patient newPatient = patientRepository.save(PatientMapper.ToModel(patientRequestDTO));
+        return PatientMapper.ToDTO(newPatient);
     }
 
 }
