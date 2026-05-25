@@ -1,0 +1,9 @@
+// localhost:PORT/SERVICE/METHODE
+
+GRPC localhost:9001/BillingService/CreateBillingAccount
+
+{
+  "patientId" : "032421" ,
+  "name" : "youssef mouha" ,
+  "email" : "yomo@gmail.com"
+}
