@@ -8,6 +8,7 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import org.hibernate.validator.constraints.Length;
 
+import java.time.LocalDate;
 import java.util.UUID;
 
 public class DoctorRequestDto {
@@ -29,6 +30,17 @@ public class DoctorRequestDto {
 
     @NotNull(message = "specialisation is required")
     private Specialisation specialisation ;
+
+    @NotNull
+    private LocalDate dateOfBirth ;
+
+    public LocalDate getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setDateOfBirth(LocalDate dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
 
     public String getName() {
         return name;

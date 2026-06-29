@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
 
+import java.time.LocalDate;
 import java.util.UUID;
 
 @Entity
@@ -30,6 +31,17 @@ public class Doctor {
 
     @Enumerated(EnumType.STRING)
     private Specialisation specialisation ;
+
+    @NotNull
+    private LocalDate dateOfBirth ;
+
+    public LocalDate getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setDateOfBirth(LocalDate dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
 
     public UUID getId() {
         return id;
