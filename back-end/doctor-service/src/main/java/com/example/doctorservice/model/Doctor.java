@@ -23,11 +23,11 @@ public class Doctor {
     private String email;
 
     @NotNull
-    private Integer phone ;
+    private String phone ;
 
     @NotNull
     @Column(unique = true)
-    private Integer licenseNumber ;
+    private String licenseNumber ;
 
     @Enumerated(EnumType.STRING)
     private Specialisation specialisation ;
@@ -67,11 +67,11 @@ public class Doctor {
         this.email = email;
     }
 
-    public Integer getLicenseNumber() {
+    public String getLicenseNumber() {
         return licenseNumber;
     }
 
-    public void setLicenseNumber(Integer licenseNumber) {
+    public void setLicenseNumber(String licenseNumber) {
         this.licenseNumber = licenseNumber;
     }
 
@@ -83,11 +83,11 @@ public class Doctor {
         this.specialisation = specialisation;
     }
 
-    public Integer getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(Integer phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 }

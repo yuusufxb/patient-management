@@ -9,7 +9,7 @@ public class DoctorResposeDto {
     private UUID id ;
     private String name ;
     private String email ;
-    private Integer phone ;
+    private String phone ;
     private String specialisation ;
 
     public String getName() {
@@ -36,11 +36,11 @@ public class DoctorResposeDto {
         this.id = id;
     }
 
-    public Integer getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(Integer phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
